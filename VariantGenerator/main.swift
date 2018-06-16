@@ -100,7 +100,8 @@ func getNumberForFirstTask(for surname: String?) -> Character? {
 }
 
 func getNumberForSecondTask(for surname: String?) -> Character? {
-    guard let surname = surname else { return nil }
+    guard let surname = surname,
+        surname.count > 1 else { return nil }
     let index = surname.index(surname.startIndex, offsetBy: 1)
     let secondCharacter = surname[index]
     guard let number = convertToNumber(letter: secondCharacter) else { return nil }
@@ -136,7 +137,7 @@ let enteredSurname = readLine()?.uppercased()
 outputToConsole(for: enteredSurname)
 
 func askToContinue() {
-    print("Хотите еще проверить фамилию [да/нет]")
+    print("Хотите еще проверить фамилию? [да/нет]")
     if let response = readLine(),
         response == "да" {
         print("Введите свою фамилию:")
