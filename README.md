@@ -1,6 +1,6 @@
 [![Platform](https://img.shields.io/badge/platform-macOS-green.svg)]()
 [![Swift 4.1](https://img.shields.io/badge/Swift-4.1-orange.svg)](https://swift.org)
-# Variant Genrator
+# Variant Generator
 Программа для Терминала macOS, высчитывающая номер варианта по методам оптимизации по фамилии студента.
 
 ## 🔧 Как запустить проект
