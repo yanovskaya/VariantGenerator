@@ -126,7 +126,7 @@ func outputToConsole(for surname: String?) {
     }
     print()
     if let secondTask = getNumberForSecondTask(for: surname) {
-        print("2 ЗАДАЧА -  \(secondTask).")
+        print("2 ЗАДАЧА - \(secondTask).")
     } else {
         print("Не удалось определить пункт для 2 задачи.")
     }
